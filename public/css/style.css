@@ -1,0 +1,496 @@
+/* COLORES PARA EL PROYECTO */
+
+/* Para un blog de software libre, te recomendaría una paleta de colores que refleje la naturaleza abierta y colaborativa del software libre. Aquí tienes una sugerencia de paleta de colores:
+
+    Color Primario: Azul
+        Hex: #007BFF
+        RGB: (0, 123, 255)
+        El azul es un color que transmite confianza y profesionalismo, ideal para un blog de tecnología.
+
+    Color Secundario: Verde
+        Hex: #28A745
+        RGB: (40, 167, 69)
+        El verde representa crecimiento, frescura y sostenibilidad, valores asociados al software libre.
+
+    Color de Fondo: Blanco
+        Hex: #FFFFFF
+        RGB: (255, 255, 255)
+        Un fondo blanco asegura legibilidad y limpieza en el diseño.
+
+    Color de Texto Principal: Negro
+        Hex: #333333
+        RGB: (51, 51, 51)
+        Un color de texto oscuro asegura buena legibilidad sobre el fondo blanco.
+
+    Color de Enlaces: Naranja
+        Hex: #FF5733
+        RGB: (255, 87, 51)
+        El naranja es un color llamativo que puede usarse para enlaces y botones, destacando llamadas a la acción.
+
+    Color de Resaltado: Amarillo
+        Hex: #FFC107
+        RGB: (255, 193, 7)
+        El amarillo puede usarse para resaltar elementos importantes, como notificaciones o partes del contenido.
+
+Aquí tienes una muestra visual de la paleta:
+
+    #007BFF (Azul)
+    #28A745 (Verde)
+    #FFFFFF (Blanco)
+    #333333 (Negro)
+    #FF5733 (Naranja)
+    #FFC107 (Amarillo)
+
+Esta combinación de colores te ayudará a crear una apariencia moderna y profesional, al mismo tiempo que refleja los valores del software libre.
+*/
+
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+/*.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+*/
+
+
+/* Estilos comunes para todo el documento */
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	background-color: #FFFFFF;
+	height: 100vh;
+}
+h1, h2{
+	font-family: "Merriweather", serif;
+}
+img {
+	border-radius: 15px;
+}
+
+/*Estilos para el header */
+header{
+	padding: 80px;
+	text-align: center;
+	background-image: url(../img/headering2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header div{
+	padding: 10px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.4);
+	color: #FFC107;
+	font-size: 1.1rem;
+}
+@media (max-width: 800px){
+	header{
+		background-position: center;
+	}
+}
+
+/*Estilos para la barra de navegacion */
+.navbar{
+	display: flex;
+	justify-content: center;
+	background-color: #007BFF;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
+}
+.navbar a{
+	color: white;
+	padding: 14px 30px;
+	text-decoration: none;
+}
+.navbar a:hover{
+	background-color: #FF5733;
+	color: green;
+}
+@media(max-width: 800px){
+	.navbar{
+		flex-direction: column;
+		position: unset;
+	}
+
+.navbar a{
+	text-align: center;
+}
+.navbar a:hover{
+	width: 100%;
+	border-style: solid;
+	border-color: #28A745;
+}
+}
+/* Estilo parte principal */
+.principal {
+	display: flex;
+	flex-wrap: wrap;
+}
+aside {
+	flex-basis: 25%;
+	background-color: #2b8e4e;
+	text-align: center;
+	padding: 10px;
+}
+aside h2{
+	margin-top: 2%;
+}
+main{
+	flex-basis: 75%;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	padding-left: 40px;
+}
+@media (max-width: 800px){
+	.principal{
+		flex-direction: column;
+	}
+}
+
+/*Estilos aside */
+.image img{
+	width: 90%;
+	height: auto;
+	object-fit: cover;
+	transition: 0.5s all ease-in-out;
+}
+.image:hover img{
+	transform: scale(1.07);
+}
+.asideTitle{
+	/*text-decoration: underline;*/
+	color: #FFC107;
+}
+.aditionalContent{
+
+	color: #FFFFFF;
+}
+
+@media (max-width: 800px){
+	.image img{
+		width: 60%;
+		height: auto;
+	}
+}
+
+/*Estilos main */
+main h2{
+	text-transform: uppercase;
+	margin-top: 10px;
+	text-align: center;
+	color: #333333;
+}
+main h5{
+	text-align: right;
+}
+main p{
+	font-style: italic;
+}
+main img{
+	width: 80%;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+
+
+}
+.leerMas{
+	background-color: #FF5733;
+	color:  #FFFFFF;
+	text-decoration: none;
+	padding: 10px;
+	border-radius:10px;
+	margin: auto;
+	text-align: center;
+}
+.leerMas:hover{
+	background-color:  #FFC107;
+	color: green;
+}
+.verMas{
+	display: block;
+	background-color: black;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 40px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.verMas:hover{
+	background-color:  #FFC107;
+	color: green;
+}
+/* Estilos para el footer */
+
+footer{
+	padding: 10px;
+	text-align: center;
+	background-color: orange;
+	color: black;
+
+}
+
+/* Estilos formulario*/
+form{
+	padding: 50px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+label{
+	background-color: #FF5733;
+	color: #FFFFFF;
+	padding: 15px;
+	border-radius: 10px;
+}
+input{
+	padding: 15px;
+	border-radius: 10px;
+}
+fieldset{
+	display: grid;
+	grid-template-columns: 40vw 30vw;
+	gap: 15px;
+	margin: auto;
+	width: fit-content;
+	font-size: 1.2rem;
+	border: 3px linen #007BFF;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+}
+legend{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+.red{
+	background-color: red;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+.green{
+	background-color: #28A745;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+@media(max-width: 800px){
+	fieldset{
+		display: flex;
+		flex-direction: column;
+	}
+}
+/*Estilos para Descargas*/
+
+.container-fluid{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	background-color: #28A745;
+}
+.artDescarga{
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+
+}
+.artDescarga h2{
+	text-align: center;
+	padding-top: 5%;
+}
+.artDescarga img{
+	width: 60%;
+	height: 60vh;
+	margin-left: 15%;
+	padding: 3%;
+	object-fit: cover;
+}
+.carousel-item img{
+	width: 90%;
+	height: 500px;
+	object-fit: cover;
+}
+.carousel-control-next{
+	color: #007BFF;
+}
+
+@media (max-width:800px){
+	.carousel-item{
+	object-fit: contain;
+	height:auto;
+}
+.carousel-inner{
+	object-fit: contain;
+}
+}
+
+/*Estilos de Cartas*/
+.card-img-top{
+	margin-top: 3%;
+	height: 350px;
+	object-fit: cover;
+}
+.card-title{
+	text-align: unset;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/*.cuerpoNota{
+	display: flex;
+
+	grid-template-columns: 45vw 45vw;
+	gap: 15px;
+	margin: auto;
+	width: fit-content;
+	font-size: 1.2rem;
+	border: 3px linen #007BFF;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+}*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;	; 
+		background-color: #2b8e4e;
+		margin: 3%
+}
+
+.box {
+    flex: 0 0 50%; /* Cada elemento ocupará el 50% del ancho del contenedor */
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+}
+
+@media (max-width: 600px) {
+		.container{
+			display: block;
+		}
+    .box {
+				display: block;
+        flex: 0 0 100%; /* En pantallas pequeñas, cada elemento ocupará el 100% del ancho */
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Refugio Libre</title>
+	<link rel = "stylesheet" href = "../css/style.css">
+	<link rel="icon" type="image/png" href="../img/iconPage.png">
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<div>
+			<h1>Refugio Libre</h1>
+			<p>Pagina referida al sofware libre</p>
+		</div>
+	</header>
+
+	<!-- NAVBAR -->
+	<nav class="navbar">
+		<a href="../../index.html">Inicio</a>
+		<a href="descargas.html">Descargas</a>
+		<!--<a href="#">Foro</a>
+		<a href="#">Nosotros</a> -->
+		<a href="formulario.html">Contactanos</a>
+	</nav>
+
+	<form action="">
+		<fieldset>
+			<legend>Formulario de Registro</legend>
+			<label for="nombre">Nombre: </label>
+			<input type="text" name="name" id="nombre" placeholder="Tu nombre" maxlength="30">
+
+			<label for="apellido">Apellido: </label>
+			<input type="text" name="lname" id="apellido" placeholder="Tu apellido" maxlength="25">
+
+			<label for="fecha">Fecha de Nacimiento</label>
+			<input type="date" name="bdate" id="fecha" placeholder="Fecha de Nacimiento" maxlength="8">
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="Tu email" maxlength="30" required>
+
+			<label for="pass">Contraseña: </label>
+			<input type="password" name="pass" id="pass" placeholder="Contraseña" maxlength="25" required>
+
+			<input class="green" type="submit" value="Enviar">
+			<input class="red" type="reset" value="Borrar">
+		</fieldset>
+	</form>
+
+	<footer>
+			<p>&copy; Nino Magni, Potrero Digital 2024</p>
+		</footer>
+</body>
+</html>
